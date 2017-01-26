@@ -1,7 +1,7 @@
 class CreateVotes < ActiveRecord::Migration
   def change
     create_table :votes do |t|
-      t.integer :pub_id
+      t.references :pub, index: true, foreign_key: true
       t.integer :vote1_id
       t.integer :vote2_id
       t.integer :vote3_id

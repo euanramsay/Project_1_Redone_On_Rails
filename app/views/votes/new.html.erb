@@ -1,5 +1,14 @@
-<h1>New Vote</h1>
+<h1>Add Voting Entry</h1>
 
-<%= render 'form' %>
+<%= collection_select(:name, :id, Pub.all, :id, :name) %>
 
+<%= collection_select(:name, :id, Pub.all, :id, :name) %>
+
+<%= collection_select(:name, :id, Pub.all, :id, :name) %>
+
+<input type='submit' value="Submit Votes">
+
+<br>
+<a href="/pubs/new">Add new pub</a>
+<br>
 <%= link_to 'Back', votes_path %>

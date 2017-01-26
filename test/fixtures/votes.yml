@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  pub_id: 1
+  pub_id_id: 
   vote1_id: 1
   vote2_id: 1
   vote3_id: 1
 
 two:
-  pub_id: 1
+  pub_id_id: 
   vote1_id: 1
   vote2_id: 1
   vote3_id: 1
