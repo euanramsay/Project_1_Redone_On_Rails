@@ -1,12 +1,16 @@
 <h1>Add Voting Entry</h1>
 
-<%= collection_select(:name, :id, Pub.all, :id, :name) %>
+<%= form_tag do %>
 
 <%= collection_select(:name, :id, Pub.all, :id, :name) %>
 
 <%= collection_select(:name, :id, Pub.all, :id, :name) %>
 
-<input type='submit' value="Submit Votes">
+<%= collection_select(:name, :id, Pub.all, :id, :name) %>
+
+<%= submit_tag "Submit Votes" %>
+
+<% end %>
 
 <br>
 <a href="/pubs/new">Add new pub</a>
